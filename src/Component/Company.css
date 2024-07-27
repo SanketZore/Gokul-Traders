@@ -1,0 +1,125 @@
+/* General table styles */
+table,
+td,
+tr,
+th {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 8px;
+    word-wrap: break-word; /* Ensures that long words are broken into new lines */
+}
+
+/* Center the table */
+.statement {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Ensure table takes full width for better responsiveness */
+    max-width: 1000px; /* Optional: Set a max-width for larger screens */
+}
+
+/* Responsive form and layout adjustments */
+#Extended-Data {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: rgb(102, 58, 5);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Adjust form width based on screen size */
+@media (min-width: 870px) {
+    #Extended-Data {
+        width: 700px;
+    }
+
+    .info {
+        display: flex;
+    }
+}
+
+@media (min-width: 607px) and (max-width: 869px) {
+    #Extended-Data {
+        width: 590px;
+    }
+
+    .info {
+        display: flex;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 606px) {
+    #Extended-Data {
+        width: 410px;
+    }
+}
+
+@media (max-width: 399px) {
+    #Extended-Data {
+        width: 370px;
+    }
+}
+
+/* Flexbox adjustments for form elements */
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.new-data {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    justify-content: space-between;
+}
+
+/* Input styling */
+input {
+    width: 180px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Label styling */
+.space {
+    width: 88px;
+    text-align: left;
+}
+
+/* Button and back arrow styling */
+.buttons {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.backArrow {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.arrow {
+    display: block;
+    text-align: left;
+    margin: 10px 30px;
+}
+
+/* Responsive adjustments for statement */
+@media (max-width: 431px) {
+    #statement {
+        font-size: 10px;
+        margin: 10%;
+    }
+
+    .compName,
+    .compAdd,
+    .state,
+    .owner,
+    .merchant {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
